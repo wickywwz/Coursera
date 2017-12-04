@@ -1,0 +1,71 @@
+用Git进行版本控制
+术语：				
+提交（Commit）:Git将数据看做微型文件系统的一组快照。每次commit，它都对文件当时的状况拍照，并存储对该快照的引用。
+仓库（Repository / repo）:一个包含项目内容以及几个文件的目录，用来与 Git 进行通信。
+工作目录 / 工作区（Working Directory）:在计算机的文件系统中看到的文件,还未commit到仓库中。
+检出（Checkout）:指将仓库中的内容复制到工作目录下
+暂存区 / 暂存索引 / 索引（Staging Area / Staging Index / Index）:将暂存区看做准备工作台，Git 将在此区域获取下个 commit
+SHA:SHA 是每个 commit 的 ID 编号。
+分支（Branch）:分支是从主开发流程中分支出来的新的开发流程。
+
+git工作流程：
+	1.在工作目录创建/修改文件
+	2.将文件更新结果推送到暂存区
+	3.将文件commit到仓库
+
+配置Git
+# 设置你的 Git 用户名
+git config --global user.name "<Your-Full-Name>"
+# 设置你的 Git 邮箱
+git config --global user.email "<your-email-address>"
+# 确保 Git 输出内容带有颜色标记
+git config --global color.ui auto	
+# 对比显示原始状态
+git config --global merge.conflictstyle diff3
+# 查看设置列表
+git config --list
+
+Git 与代码编辑器：在 Google 中搜索“修改 Git 默认编辑器为 X 编辑器”
+git config --global core.editor "atom --wait"
+git config --global core.editor "C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+git config --global core.editor "code --wait"
+
+#辅助终端命令：
+#	ls - 用来列出文件和目录
+#	mkdir - 用来新建仓库
+#	cd - 用来更改目录
+#	rm - 用来删除文件和目录
+
+在目标目录中创建Git仓库
+git init	#创建一个.git目录，即仓库
+
+克隆Git仓库，并重命名为new_name
+git clone <path-to-repository-to-clone> new_name
+
+查看仓库状态
+git status
+输出：
+	On branch master #所在分支
+	Your branch is up-to-date with 'origin/master'. #是否与复制的仓库保持一致
+	nothing to commit, working directory clean #待定更改
+	
+查看commit记录
+git log 			#显示SHA、提交人、提交时间、更改信息
+git log --oneline	#每行显示一个commit，显示SHA和更改信息
+git log --stat 		#显示commit更改的文件以及添加或删除的行数
+git log -p			#p为patch简写，来显示对文件作出的实际更改
+git show <SHA>		#仅显示一个 commit
+
+
+
+
+
+
+
+
+
+
+
+git remote
+git push
+git pull

@@ -1,0 +1,52 @@
+项目分析流程
+一、预测未来现金流（Future Cash Flows）
+	1.预测财务数据（Financial Statements）
+		a.预测销量（及销售增长量）
+		b.用销量填补利润表（income statement）其它内容
+		c.用销量构建产品或服务的生产计划（schedule for producing the product or service）
+		d.用销量预测和生产计划预测消耗资源（资产和时间）
+		e.用利润表和资产负债表填补现金流量表
+	2.预测收入（Revenues）
+		a.预估市场需求（Customer Demand）,需求可能与销售价格（Salse Price）有关
+		b.预测行业市场（Industry Sales）和公司市场份额（Firm Market Share）
+		c.确认产品和技术限制条件（Production/ Technology Constraints）
+		d.对于新产品需评估：进入市场所需时间、快速增长期持续时间、稳定期市场状态
+	3.预测利润表其它项
+		a.估计销售成本：生产资料组合、边际收益、固定与可变成本
+		b.销售费用和管理费用（Selling General and Administrative:）：如广告费
+		c.折旧费用(Depreciation Expense)
+		d.税额
+		e.处置年(Disposal Year,Gain on Sale of the PPE)
+	4.预测资产负债表
+		a.应收账（Accounts Receivable）
+		b.库存（Inventory）
+		c.应付账（Accounts Payables）
+		d.长期资产
+	5.预测现金流量表
+		a.Operating CashFlow = NetIncome + Depreciation – Change in WorkingCapital
+		b.Investing Cash Flows
+			– During the Start up Period：Purchase of PPE
+			– During the Disposal Period：Sale of PPE
+二、计算NPV和IRR
+	1.获取预测的现金流量表
+	2.代入NPV计算函数
+	3.计算得到NPV和IRR
+三、构建与评估其它场景
+	1.检查可行度
+		a.预测值是否make sense
+		b.预测销售价格是否现实
+		c.预测销量是否现实
+		d.是否有足够资源进行生产
+		e.应收账、库存和负债之间的平衡是否合理
+	2.场景分析
+		a.不同销量的影响
+		b.NPV与Profit Margin（占销售价格的比例）的关系
+		c.销售增长量分析
+		d.通胀率的影响
+		e.折扣率的影响
+		f.时间相关因素的影响
+		g.与其他产品及推广活动的交互影响
+四、公司持续发展的评估（评估公司价值）
+	1.通常假设公司进入平稳发展期
+		a.现金流是常数
+		b.或现金流稳定增长
