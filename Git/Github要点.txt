@@ -1,0 +1,19 @@
+git remote 								#管理远程仓库和与之交互
+git remote -v							#查看远程仓库的完整路径
+git remote add origin <url>				#创建远程仓库，orgin为远程仓库的简写名（shortname）
+
+git push <remote-shortname> <branch>	#将分支branch推送到远程仓库remote-shortname中
+使用http版本需要输入用户名和密码，使用ssh版本提供密钥后可直接链接
+
+git pull origin master					#将远程仓库origin拉回本地，并与分支master合并
+
+gitfetch用于从远程仓库分支检索commit但不会在收到这些commit之后，自动将本地分支与远程跟踪分支合并
+可以将git fetch想象成git pull它的一半操作，而git pull的另一半是合并
+git fetch origin master					#远程分支上commit复制到本地，本地指针指向最新的commit
+
+fork仓库时，会创建远程仓库的一份新副本，修改fork的仓库不会更改原始仓库
+
+git shortlog			#查看commit历史，显示按字母顺序排序的人名列表，以及他们对应的提交说明
+git shortlog -s -n		#-s 仅显示commit的数量以及用-n来按数量排序
+git log --author=Surma	#按作者筛选
+git log --grep=bug		#使用--grep选项筛选commit内容
